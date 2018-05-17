@@ -1,0 +1,19 @@
+{
+	"cols": [
+		[
+			{
+				"title": "序号",
+				"type": "numbers"
+			},
+			{
+				"field": "parentName",
+				"width": "50%",
+				"title": "父节点"
+			}, {
+				"field": "name",
+				"width": "50%",
+				"title": "子节点"
+			}
+		]
+	]
+}

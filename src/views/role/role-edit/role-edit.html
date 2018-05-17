@@ -1,0 +1,55 @@
+<div class="whui-fluid">
+
+    <div class="layui-row whui-form">
+        <form class="layui-form" lay-filter="role-edit-form">
+            <input type="text" name="id" class="layui-input" style="display:none">
+
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">公司名称<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                   		<!--<select name="companycode" id="companycode" lay-search  >
+                    	</select>-->
+                    	<input type="text" name="companycode" id="companycode" lay-verify="required" class="layui-input" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">角色编码</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="num" id="num" lay-verify="required" class="layui-input" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">角色名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="name" lay-verify="required" autocomplete="off" placeholder="请输入角色名称" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            
+            <button class="layui-btn layui-hide" lay-submit lay-filter="role-edit-submit"></button>
+        </form>
+    </div>
+</div>
+<script src="../../../lib/comm/js/comm.js?page=role-edit" type="text/javascript" charset="utf-8"></script>
+<!--<script type="text/javascript">
+	layui.use('form', function(){
+    var form = layui.form;  
+    form.render(); //渲染全部
+    
+    var whui = layui.whui;
+	whui.request(layui.whconfig.bizurl.position.initCompany, {}, function(data,desc){
+            $("#companycode").html("");
+       		$.each(data, function(key, val) {
+     			var option = $("<option>").val(val.code).text(val.name);
+                $("#companycode").append(option);
+            }); 
+   			$("#companycode").get(0).selectedIndex=0;
+   			form.render('select');
+	});
+ });
+</script>-->

@@ -1,0 +1,41 @@
+{
+  "cols": [
+    [
+      {
+        "type": "checkbox"
+      }, {
+      "title": "序号",
+      "type": "numbers"
+    }, {
+      "field": "name",
+      "width": 80,
+      "title": "用户名"
+    }, {
+      "field": "account",
+      "width": 80,
+      "title": "账户"
+    }, {
+      "field": "orgname",
+      "width": 80,
+      "title": "组织"
+    }, {
+      "field": "roleName",
+      "title": "角色",
+      "width": "10%",
+      "minWidth": 100
+    },{
+      "field": "phone",
+      "title": "手机号",
+      "sort": true
+    }, {
+      "field": "mail",
+      "title": "邮箱",
+      "sort": true
+    }, {
+      "field": "createtime",
+      "title": "创建时间",
+      "sort": true
+    }
+    ]
+  ]
+}

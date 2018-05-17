@@ -1,0 +1,39 @@
+{
+	"cols": [
+		[
+			{
+				"type": "checkbox"
+			}, {
+				"title": "序号",
+				"type": "numbers"
+			}, {
+				"field": "tbpubcode01Id",
+				"title": "ID"
+			}, {
+				"field": "seq",
+				"width": 80,
+				"title": "顺序号"
+			},  {
+				"field": "configCode",
+				"width": 120,
+				"title": "配置项目代码"
+			},{
+				"field": "desc0",
+				"width": 80,
+				"title": "描述0"
+			}, {
+				"field": "desc1",
+				"width": 80,
+				"title": "描述1"
+			}, {
+				"field": "desc2",
+				"width": 80,
+				"title": "描述2"
+			}, {
+				"field": "desc3",
+				"width": 80,
+				"title": "描述3"
+			}
+		]
+	]
+}

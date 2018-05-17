@@ -1,0 +1,116 @@
+<div id="contract-index">
+    <title>租赁合同管理</title>
+    <div class="whui-fluid">
+        <div class="layui-row whui-form">
+            <div class="layui-col-md12">
+                <form class="layui-form" lay-filter="contract-query-form">
+                    <div class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">管理单位</label>
+                                <div class="layui-input-block">
+                                    <select id="management" class="layui-select" name="management"  lay-filter="select-management" placeholder="请选择管理单位"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">城区</label>
+                                <div class="layui-input-block">
+                                    <input id="district"  class="layui-input" name="district" type="text" placeholder="请填写城区"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">街区</label>
+                                <div class="layui-input-block">
+                                    <input id="street" class="layui-input" name="street" type="text" placeholder="请填写街区"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">小区</label>
+                                <div class="layui-input-block">
+                                    <select id="areaName" class="layui-select" name="areaName" lay-filter="select-areaName" placeholder="请选择小区"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">房产名称</label>
+                                <div class="layui-input-block">
+                                    <input id="estateName"  class="layui-input" name="estateName" type="text" placeholder="请填写房产名称"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">房产编号</label>
+                                <div class="layui-input-block">
+                                    <input id="estateNo" class="layui-input" name="estateNo" type="text" placeholder="请填写房产编号"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">房产状态</label>
+                                <div class="layui-input-block">
+                                    <select id="estateStatus" class="layui-select" name="estateStatus" lay-filter="select-estateStatus" placeholder="请选择房产状态"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">房产类型</label>
+                                <div class="layui-input-block">
+                                    <select id="estateType" name="estateType" lay-filter="select-estateType" placeholder="请选择房产类型"></select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="layui-btn layui-hide" lay-submit lay-filter="contract-query-btn"></button>
+                </form>
+            </div>
+        </div>
+        <div class="layui-row whui-btnbar">
+            <div class="layui-col-md12">
+                <div class="layui-row">
+                    <div class="layui-col-xs12 layui-col-sm8 layui-col-md9">
+                        <div class="layui-btn-container">
+                            <div class="layui-btn-group">
+                                <button class="layui-btn whui-btn-add"><i class="fa fa-plus"></i>新增</button>
+                                <button class="layui-btn whui-btn-update"><i class="fa fa-pencil"></i>修改</button>
+                                <button class="layui-btn whui-btn-delete"><i class="fa fa-trash-alt"></i>删除</button>
+                                <!--<button class="layui-btn whui-btn-download"><i class="fa fa-download"></i>下载</button>
+                                <button class="layui-btn whui-btn-print"><i class="fa fa-print"></i>打印</button>
+                                <button class="layui-btn whui-btn-print"><i class="fa fa-folder-open"></i>打开</button>
+                                <button class="layui-btn"><i class="fa fa-cog"></i>操作</button>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12 layui-col-sm4 layui-col-md3" style="text-align: center;">
+                        <div class="layui-btn-container">
+                            <div class="layui-btn-group">
+                                <button class="layui-btn whui-btn-query"><i class="fa fa-search"></i>查询</button>
+                                <button class="layui-btn whui-btn-reset"><i class="fa fa-eraser"></i>重置</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body">
+                        <table class="layui-hide" id="estate-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../../lib/comm/js/comm.js?page=contract-index" type="text/javascript" charset="utf-8"></script>
+<script src="../../contract/contract-index/contract-index.js" type="text/javascript" charset="utf-8"></script>

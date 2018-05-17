@@ -1,0 +1,68 @@
+<div id="company-index">
+    <title>公司管理</title>
+    <div class="whui-fluid">
+        <div class="layui-row whui-form">
+            <div class="layui-col-md12">
+                <form class="layui-form" lay-filter="company-query-form">
+                    <div class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">公司简称</label>
+                                <div class="layui-input-block">
+                                    <input id="compNameMain" type="text" name="compNameMain" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">公司编码</label>
+                                <div class="layui-input-block">
+                                    <input id="companyCodeMain" type="text" name="companyCodeMain" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="layui-btn layui-hide" lay-submit lay-filter="company-query-btn"></button>
+                </form>
+            </div>
+        </div>
+        <div class="layui-row whui-btnbar">
+            <div class="layui-col-md12">
+                <div class="layui-row">
+                    <div class="layui-col-xs12 layui-col-sm8 layui-col-md9">
+                        <div class="layui-btn-container">
+                            <div class="layui-btn-group">
+                                <button class="layui-btn whui-btn-add"><i class="fa fa-plus"></i>新增</button>
+                                <button class="layui-btn whui-btn-update"><i class="fa fa-pencil"></i>修改</button>
+                                <button class="layui-btn whui-btn-delete"><i class="fa fa-trash-alt"></i>删除</button>
+                                <!--<button class="layui-btn whui-btn-download"><i class="fa fa-download"></i>下载</button>
+                                <button class="layui-btn whui-btn-print"><i class="fa fa-print"></i>打印</button>
+                                <button class="layui-btn whui-btn-print"><i class="fa fa-folder-open"></i>打开</button>
+                                <button class="layui-btn"><i class="fa fa-cog"></i>操作</button>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12 layui-col-sm4 layui-col-md3" style="text-align: center;">
+                        <div class="layui-btn-container">
+                            <div class="layui-btn-group">
+                                <button class="layui-btn whui-btn-query"><i class="fa fa-search"></i>查询</button>
+                                <button class="layui-btn whui-btn-reset"><i class="fa fa-eraser"></i>重置</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body">
+                        <table class="layui-hide" id="company-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../../lib/comm/js/comm.js?page=company-index" type="text/javascript" charset="utf-8"></script>
+<script src="../../company/company-index/company-index.js" type="text/javascript" charset="utf-8"></script>

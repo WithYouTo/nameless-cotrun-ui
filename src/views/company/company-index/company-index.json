@@ -1,0 +1,47 @@
+{
+	"cols": [
+		[
+			{
+				"type": "checkbox"
+			}, {
+				"title": "序号",
+				"type": "numbers"
+			}, {
+				"field": "companyId",
+				"title": "ID"
+			}, {
+				"field": "companyCode",
+				"width":100,
+				"title": "公司编码"
+			}, {
+				"field": "compName",
+				"width":140,
+				"title": "公司简称"
+			}, {
+				"field": "fullName",
+				"width":160,
+				"title": "公司全称"
+			}, {
+				"field": "address",
+				"width":160,
+				"title": "公司地址"
+			}, {
+				"field": "compTel",
+				"width":120,
+				"title": "公司电话"
+			}, {
+				"field": "fax",
+				"width":100,
+				"title": "传真号码"
+			}, {
+				"field": "compWeb",
+				"width":160,
+				"title": "公司网址"
+			}, {
+				"field": "email",
+				"width":100,
+				"title": "电子邮箱"
+			}
+		]
+	]
+}

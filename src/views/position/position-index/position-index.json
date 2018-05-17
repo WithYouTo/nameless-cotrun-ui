@@ -1,0 +1,27 @@
+{
+  "cols": [
+    [
+      {
+        "type": "checkbox"
+      }, {
+      "title": "序号",
+      "type": "numbers"
+    }, {
+      "field": "name",
+      "width": "30%",
+      "title": "公司名称",
+      "sort": true
+    }, {
+      "field": "positionName",
+      "width": "30%",
+      "title": "职位名称",
+      "sort": true
+    }, {
+      "field": "positionLevel",
+      "title": "职位级别",
+      "width": "30%",
+      "sort": true
+    }
+    ]
+  ]
+}

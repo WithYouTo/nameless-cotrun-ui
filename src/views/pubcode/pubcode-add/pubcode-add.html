@@ -1,0 +1,32 @@
+<div class="whui-fluid">
+    <div class="layui-row whui-form">
+        <form class="layui-form">
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">项目代码</label>
+                    <div class="layui-input-block">
+                        <input id="configCode" type="text" name="configCode" lay-verify="required" autocomplete="off" placeholder="" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">项目名称</label>
+                    <div class="layui-input-block">
+                        <input id="configName" type="text" name="configName" lay-verify="required" autocomplete="off" placeholder="" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">备注</label>
+                    <div class="layui-input-block">
+                        <textarea class="layui-textarea" name="notice" placeholder=""></textarea>
+                    </div>
+                </div>
+            </div>
+            <button class="layui-btn layui-hide" lay-submit lay-filter="pubcode-add-submit"></button>
+        </form>
+    </div>
+</div>
+<script src="../../../lib/comm/js/comm.js?page=pubcode-add" type="text/javascript" charset="utf-8"></script>

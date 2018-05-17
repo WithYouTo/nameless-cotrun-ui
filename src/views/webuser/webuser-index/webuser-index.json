@@ -1,0 +1,70 @@
+{
+  "cols": [
+    [
+      {
+        "type": "checkbox"
+      }, {
+      "title": "序号",
+      "type": "numbers"
+    },{
+      "field": "companyCode",
+      "width": "11%",
+      "title": "所属公司",
+      "sort": true
+    },
+    {
+      "field": "departmentId",
+      "width": "11%",
+      "title": "所属单位/部门",
+      "sort": true
+    },{
+      "field": "account",
+      "width": "9%",
+      "title": "工号",
+      "sort": true
+    }, {
+      "field": "name",
+      "width": "6%",
+      "title": "姓名",
+      "sort": true
+    }, {
+      "field": "sex",
+      "title": "性别",
+      "width": "5%",
+      "sort": true
+    }, {
+      "field": "phone",
+      "title": "手机号",
+      "width": "9%",
+      "sort": true
+    }, {
+      "field": "positionId",
+      "title": "职位",
+      "width": "8%",
+      "sort": true
+    },
+     {
+      "field": "idCard",
+      "title": "身份证",
+      "width": "13%",
+      "sort": true
+    }, {
+      "field": "managerType",
+      "title": "用户类型",
+      "width": "10%",
+      "sort": true
+    },
+     {
+      "field": "roleId",
+      "title": "角色",
+      "width": "15%",
+      "sort": true
+    }, {
+      "field": "address",
+      "title": "居住地址",
+      "width": "12%",
+      "sort": true
+    }
+    ]
+  ]
+}

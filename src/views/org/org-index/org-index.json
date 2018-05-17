@@ -1,0 +1,28 @@
+{
+  "cols": [
+    [
+      {
+        "type": "checkbox"
+      }, {
+      "title": "序号",
+      "type": "numbers"
+    }, {
+      "field": "username",
+      "width": 80,
+      "title": "组织名称"
+    }, {
+      "field": "sex",
+      "width": 80,
+      "title": "性别"
+    }, {
+      "field": "city",
+      "width": 80,
+      "title": "城市"
+    }, {
+      "field": "sign",
+      "title": "签名",
+      "width": "10%",
+      "minWidth": 100
+    }]
+  ]
+}

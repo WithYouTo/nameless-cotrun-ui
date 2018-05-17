@@ -1,0 +1,34 @@
+{
+  "cols": [
+    [
+    {
+       "type": "checkbox"
+     },
+    {
+      "title": "序号",
+      "type": "numbers"
+    }, {
+      "field": "logname",
+      "width": "20%",
+      "title": "日志名称"
+    }, {
+      "field": "username",
+      "width": "16%",
+      "title": "用户名"
+    },{
+      "field": "ip",
+      "title": "登录ip",
+      "width": "15%"
+    },{
+      "field": "message",
+      "width": "20%",
+      "title": "具体消息"
+    },{
+      "field": "createtime",
+      "title": "操作时间",
+      "width":"20.5%",
+      "sort": true
+    }
+    ]
+  ]
+}

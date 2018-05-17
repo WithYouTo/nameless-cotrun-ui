@@ -1,0 +1,34 @@
+{
+  "cols": [
+    [
+       {
+      "title": "序号",
+	      "type": "numbers"
+	    }, {
+	      "field": "deptName",
+	      "width": "25%",
+	      "title": "部门名称"
+	    }, {
+	      "field": "deptCode",
+	      "width": "20%",
+	      "title": "部门代码",
+	       "sort": true
+	    }, {
+	      "field": "parentDeptName",
+	      "title": "上级部门",
+	      "width": "20%",
+	       "sort": true
+	    },{
+	      "field": "companyCode",
+	      "title": "公司编码",
+	      "width": "18%",
+	       "sort": true
+	    },{
+    		"title": "操作",
+    		"width": "12%",
+    	  "toolbar": "#barDept"
+	    }
+	    
+    ]
+  ]
+}

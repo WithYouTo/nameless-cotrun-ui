@@ -1,0 +1,24 @@
+{
+	"cols": [
+		[
+			{
+				"type": "checkbox"
+			}, {
+				"title": "序号",
+				"type": "numbers"
+			}, {
+				"field": "tbpubcodeId",
+				"title": "ID"
+			}, {
+				"field": "configCode",
+				"title": "配置项目代码"
+			}, {
+				"field": "configName",
+				"title": "配置项目名称"
+			}, {
+				"field": "notice",
+				"title": "备注"
+			}
+		]
+	]
+}

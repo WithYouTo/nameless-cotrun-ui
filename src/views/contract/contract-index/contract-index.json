@@ -1,0 +1,64 @@
+{
+	"cols": [
+		[
+			{
+				"type": "checkbox"
+			}, {
+				"title": "序号",
+				"type": "numbers"
+			}, {
+				"field": "tbContractId",
+				"title": "ID"
+			}, {
+				"field": "estateName",
+				"width": 200,
+				"title": "房产名称"
+			}, {
+				"field": "estateNo",
+				"width": 100,
+				"title": "房产编号"
+			}, {
+				"field": "contractNo",
+				"width": 100,
+				"title": "合同编号"
+			}, {
+				"field": "roomUsage",
+				"width": 120,
+				"title": "房屋用途"
+			}, {
+				"field": "rentCompany",
+				"width": 120,
+				"title": "承租方"
+			}, {
+				"field": "certificateNo",
+				"width": 120,
+				"title": "执照/身份证"
+			}, {
+				"field": "registerName",
+				"width": 240,
+				"title": "工商登记名称"
+			}, {
+				"field": "rentMobile",
+				"width": 120,
+				"title": "电话"
+			}, {
+				"field": "monthNum",
+				"width": 80,
+				"title": "租期(月)"
+			}, {
+				"field": "startDate",
+				"width": 100,
+				"title": "起租日期"
+			}, {
+				"field": "endDate",
+				"width": 100,
+				"title": "停租日期"
+			}, {
+				"field": "deposit",
+				"width": 100,
+				"title": "押金"
+			}
+			
+		]
+	]
+}

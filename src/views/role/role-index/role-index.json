@@ -1,0 +1,25 @@
+{
+  "cols": [
+    [
+      {
+        "type": "checkbox",
+        "width": "5%"
+      }, {
+      "title": "序号",
+      "width": "5%",
+      "width": 100,
+      "type": "numbers"
+    }, {
+      "field": "companycode",
+      "width": "42%",
+      "minwidth": 400,
+      "title": "公司名称"
+    }, {
+      "field": "name",
+      "width": "42%",
+      "minwidth": 400,
+      "title": "角色名称"
+    }
+    ]
+  ]
+}

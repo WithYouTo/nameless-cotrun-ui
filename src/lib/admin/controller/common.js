@@ -1,0 +1,1 @@
+layui.define(function(i){layui.$;var l=layui.layer,a=(layui.laytpl,layui.setter,layui.view,layui.admin);a.events.logout=function(){l.confirm("确定退出吗？",{title:"提示"},function(i){a.exit(),l.close(i)})},i("common",{})});

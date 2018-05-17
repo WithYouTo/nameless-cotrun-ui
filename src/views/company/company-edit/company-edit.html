@@ -1,0 +1,124 @@
+<div class="whui-fluid">
+	<div class="layui-row whui-form">
+		<form class="layui-form" lay-filter='company-edit-form'>
+			<input id="companyId" type="hidden" name="companyId" >
+			<input id="oldCompBrand" type="hidden" name="oldCompBrand" >
+			<input id="oldCompName" type="hidden" name="oldCompName" >
+			<input id="oldFullName" type="hidden" name="oldFullName" >
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">公司编码</label>
+					<div class="layui-input-block">
+						<input id="companyCode" type="text" name="companyCode" autocomplete="off" value="系统自动生成" class="layui-input layui-disabled">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">公司品牌</label>
+					<div class="layui-input-block">
+						<input id="compBrand" type="text" name="compBrand" autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">公司全称</label>
+					<div class="layui-input-block">
+						<input id="fullName" type="text" name="fullName" autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">公司简称</label>
+					<div class="layui-input-block">
+						<input id="compName" type="text" name="compName" autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">公司地址</label>
+					<div class="layui-input-block">
+						<input id="address" type="text" name="address" autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">邮政编码</label>
+					<div class="layui-input-block">
+						<input id="mail" type="text" name="mail" lay-verify='mail' autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">公司电话</label>
+					<div class="layui-input-block">
+						<input id="compTel" type="text"  name="compTel" autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">传真号码</label>
+					<div class="layui-input-block">
+						<input id="fax" type="text" name="fax" autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">公司网址</label>
+					<div class="layui-input-block">
+						<input id="compWeb" type="text" name="compWeb" autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">电子邮箱</label>
+					<div class="layui-input-block">
+						<input id="email" type="text" name="email" lay-verify='email' autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">国税号</label>
+					<div class="layui-input-block">
+						<input id="nationalTax" type="text" name="nationalTax" autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">地税号</label>
+					<div class="layui-input-block">
+						<input id="landTax" type="text" name="landTax" autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">开户银行</label>
+					<div class="layui-input-block">
+						<input id="bank" type="text" name="bank" autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm12 layui-col-md6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">银行账号</label>
+					<div class="layui-input-block">
+						<input id="bankAccount" type="text" name="bankAccount" autocomplete="off" placeholder="" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<button class="layui-btn layui-hide" lay-submit lay-filter="company-edit-submit"></button>
+		</form>
+	</div>
+</div>
+<script src="../../../lib/comm/js/comm.js?page=company-edit" type="text/javascript" charset="utf-8"></script>

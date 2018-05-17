@@ -1,0 +1,118 @@
+<div id="estate-manage-index">
+    <title>房产管理</title>
+    <div class="whui-fluid">
+        <div class="layui-row whui-form">
+            <div class="layui-col-md12">
+                <form class="layui-form" lay-filter="estate-manage-query-form">
+                    <div class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">管理单位</label>
+                                <div class="layui-input-block">
+			                    	<select name="management_Unit" id="management_Unit" lay-search  >
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">城区</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="district" lay-verify="title" autocomplete="off" placeholder="请输入城区" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">街道</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="street" lay-verify="title" autocomplete="off" placeholder="请输入街道" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">小区</label>
+                                <div class="layui-input-block">
+                                	<select name="area_name" id="area_name">
+                    				</select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">房产名称</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="estateName" lay-verify="title" autocomplete="off" placeholder="请输入房产名称" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">房产编号</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="estateNo" lay-verify="title" autocomplete="off" placeholder="请输入房产编号" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">房产状态</label>
+                                <div class="layui-input-block">
+                                	<select name="estate_status" id="estate_status">
+			                    	</select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">房产类型</label>
+                                <div class="layui-input-block">
+                                	<select name="estate_type" id="estate_type">
+			                    	</select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="layui-btn layui-hide" lay-submit lay-filter="manage-query-btn"></button>
+                </form>
+            </div>
+        </div>
+        <div class="layui-row whui-btnbar">
+            <div class="layui-col-md12">
+                <div class="layui-row">
+                    <div class="layui-col-xs12 layui-col-sm8 layui-col-md9">
+                        <div class="layui-btn-container">
+                            <div class="layui-btn-group">
+                                <button class="layui-btn whui-btn-add"><i class="fa fa-plus"></i>新增</button>
+                                <button class="layui-btn whui-btn-update"><i class="fa fa-pencil"></i>修改</button>
+                                <button class="layui-btn whui-btn-delete"><i class="fa fa-trash-alt"></i>删除</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12 layui-col-sm4 layui-col-md3" style="text-align: center;">
+                        <div class="layui-btn-container">
+                            <div class="layui-btn-group">
+                                <button class="layui-btn whui-btn-query"><i class="fa fa-search"></i>查询</button>
+                                <button class="layui-btn whui-btn-reset"><i class="fa fa-eraser"></i>重置</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body">
+                        <table class="layui-hide" id="estate-manage-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../../lib/comm/js/comm.js?page=estate-manage-index" type="text/javascript" charset="utf-8"></script>
+<script src="../../estate/estate-manage-index/estate-manage-index.js" type="text/javascript" charset="utf-8"></script>

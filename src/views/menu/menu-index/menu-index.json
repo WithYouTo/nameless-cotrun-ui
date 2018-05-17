@@ -1,0 +1,28 @@
+{
+	"cols": [
+		[
+			{
+				"type": "checkbox"
+			}, {
+				"title": "序号",
+				"type": "numbers"
+			}, {
+				"field": "name",
+				"width": "20%",
+				"title": "菜单名"
+			}, {
+				"field": "url",
+				"width": "20%",
+				"title": "请求地址"
+			},{
+			"field": "num",
+			"width": "20%",
+			"title": "菜单编码"
+			},{
+				"field": "isMenuName",
+				"width": "20%",
+				"title": "是否是菜单"
+			}
+		]
+	]
+}

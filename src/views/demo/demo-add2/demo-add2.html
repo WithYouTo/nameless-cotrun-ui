@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>WhUI Demo Center</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="shortcut icon" href="../../../assets/img/favicon.ico" />
+		<link rel="bookmark" href="../../../assets/img/favicon.ico" type="image/x-icon" 　/>
+		<link rel="stylesheet" href="../../../lib/layui/css/layui.css" media="all">
+		<link rel="stylesheet" type="text/css" href="../../../lib/whui/css/whui.css" />
+		<link rel="stylesheet" type="text/css" href="../../../plugins/fontawesome/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../../lib/comm/css/comm.css" />
+	</head>
+
+	<body>
+		<!--[if lt IE 9]>
+		  <script src="../../../plugins/compatible/html5.min.js"></script>
+		  <script src="../../../plugins/compatible/respond.min.js"></script>
+		  <script src="../../../plugins/compatible/json2.min.js"></script>
+		<![endif]-->
+		<div class="whui-fluid">
+			<div class="layui-row whui-form">
+				<form class="layui-form">
+					<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+						<div class="layui-form-item">
+							<label class="layui-form-label">单行框</label>
+							<div class="layui-input-block">
+								<input type="text" name="title1" lay-verify="required" autocomplete="off" placeholder="请输入标题" class="layui-input">
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+						<div class="layui-form-item">
+							<label class="layui-form-label">这里五个字</label>
+							<div class="layui-input-block">
+								<input type="text" name="title2" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+						<div class="layui-form-item">
+							<label class="layui-form-label">下拉框</label>
+							<div class="layui-input-block">
+								<select name="city" lay-verify="required">
+									<option value=""></option>
+									<option value="0">北京</option>
+									<option value="1">上海</option>
+									<option value="2">广州</option>
+									<option value="3">深圳</option>
+									<option value="4">杭州</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+						<div class="layui-form-item">
+							<label class="layui-form-label">单行框</label>
+							<div class="layui-input-block">
+								<input type="text" name="title4" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+						<div class="layui-form-item">
+							<label class="layui-form-label">单行框</label>
+							<div class="layui-input-block">
+								<input type="text" name="title5" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+						<div class="layui-form-item">
+							<label class="layui-form-label">单行框</label>
+							<div class="layui-input-block">
+								<input type="text" name="title6" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+						<div class="layui-form-item">
+							<label class="layui-form-label">单行框</label>
+							<div class="layui-input-block">
+								<input type="text" name="title7" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+							</div>
+						</div>
+					</div>
+					<button class="layui-btn layui-hide" lay-submit lay-filter="demo-add-submit"></button>
+				</form>
+			</div>
+		</div>
+		<script src="../../../lib/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../demo/demo-add2/demo-add2.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

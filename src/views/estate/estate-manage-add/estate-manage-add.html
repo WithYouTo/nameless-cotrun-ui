@@ -1,0 +1,203 @@
+<div class="whui-fluid">
+    <div class="layui-row whui-form">
+        <form class="layui-form"  >
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">管理单位<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                   		<select id="managementUnit"  name="managementUnit"  lay-verify="required" lay-search lay-filter="managementUnit_change">
+                    	</select>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">房产编码</label>
+                    <div class="layui-input-block">
+                        <input id="estateNo" type="text" name="estateNo"  lay-verify="required" class="layui-input" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">房产名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="estateName" lay-verify="required" autocomplete="off" placeholder="请输入房产名称" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">省市区<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                        <select id="province_city_district"  name="province_city_district"  lay-verify="required" lay-search lay-search lay-filter="pcd_change">
+                    	</select>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">街道<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                    	<input type="text" name="street"  autocomplete="off" placeholder="请输入街道" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">小区<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                   		<select id="areaName" name="areaName" lay-verify="required" >
+                    	</select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">门栋</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="building"  autocomplete="off" placeholder="请输入门栋" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">单元</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="cellName" autocomplete="off" placeholder="请输入单元"  class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">房号</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="roomName" autocomplete="off" placeholder="请输入房号" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">房产状态<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                   		<select id="estateStatus"  name="estateStatus" lay-verify="required" >
+                    	</select>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">房产类型<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                    	<select id="estateType"  name="estateType"  lay-verify="required" >
+                    	</select> 
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">房屋结构</label>
+                    <div class="layui-input-block">
+                    	<select id="estateStructure" name="estateStructure" >
+                    	</select> 
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">房屋竣工时间</label>
+                    <div class="layui-input-block">
+                        <input id="completionTime" type="text" name="completionTime"  placeholder="房屋竣工时间" class="layui-input" >
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">房屋产权证</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="propertyRightNo" autocomplete="off" placeholder="请输入房屋产权证号" class="layui-input">
+                    </div>
+                </div>
+            </div><div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">土地使用权证</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="landUseNo" autocomplete="off" placeholder="请输入土地使用权证号" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">不动产证</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="estateRightNo" autocomplete="off" placeholder="请输入不动产证号" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">证载权属人</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="ownerName" autocomplete="off" placeholder="请输入证载权属人" class="layui-input">
+                    </div>
+                </div>
+            </div><div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">建筑面积(m2)</label>
+                    <div class="layui-input-block">
+                        <input id="calArea" type="text" name="calArea" autocomplete="off" placeholder="请输入建筑面积" class="layui-input" >
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">楼层</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="floorNum" autocomplete="off" placeholder="请输入楼层" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">总楼层</label>
+                    <div class="layui-input-block">
+                        <input id="totalFloorNum" type="text" name="totalFloorNum" autocomplete="off" placeholder="请输入总楼层" class="layui-input" >
+                    </div>
+                </div>
+            </div><div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">资产在册单位</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="registeredUnit" autocomplete="off" placeholder="请输入资产在册单位" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">在册面积(m2)</label>
+                    <div class="layui-input-block">
+                        <input id="registeredArea" type="text" name="registeredArea" autocomplete="off" placeholder="请输入在册面积" class="layui-input" >
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">不在册面积</label>
+                    <div class="layui-input-block">
+                        <input id="notRegisteredArea" type="text" name="notRegisteredArea" autocomplete="off" placeholder="请输入不在册面积" class="layui-input" >
+                    </div>
+                </div>
+            </div><div class="layui-col-xs12 layui-col-sm6 layui-col-md12">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">备注</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="remark1" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <button class="layui-btn layui-hide" lay-submit lay-filter="manage-add-submit"></button>
+        </form>
+    </div>
+</div>
+<script src="../../../lib/comm/js/comm.js?page=manage-add" type="text/javascript" charset="utf-8"></script>

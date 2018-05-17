@@ -1,0 +1,71 @@
+<link rel="stylesheet" type="text/css" href="../../../plugins/modules/ztree/css/zTreeStyle/zTreeStyle.min.css" />
+<div id="menu-index">
+	<title>菜单管理</title>
+    <div class="whui-fluid">
+        <div class="layui-row layui-col-space10">
+            <div class="layui-col-xs12 layui-col-sm4 layui-col-md3">
+                <div class="layui-card">
+                    <div class="layui-card-body">
+                        <ul id="menu-tree" class="ztree"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm8 layui-col-md9">
+                <div class="layui-row whui-form">
+                    <div class="layui-col-md12">
+                        <form class="layui-form" lay-filter="menu-query-form">
+                            <div class="layui-row">
+                                <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">菜单名称</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="name" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="layui-btn layui-hide" lay-submit lay-filter="menu-query-btn"></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="layui-row whui-btnbar">
+                    <div class="layui-col-md12">
+                        <div class="layui-row">
+                            <div class="layui-col-xs12 layui-col-sm8 layui-col-md9">
+                                <div class="layui-btn-container">
+                                    <div class="layui-btn-group">
+                                        <button class="layui-btn whui-btn-add"><i class="fa fa-plus"></i>新增</button>
+                                        <button class="layui-btn whui-btn-update"><i class="fa fa-pencil"></i>修改</button>
+                                        <button class="layui-btn whui-btn-delete"><i class="fa fa-trash-alt"></i>删除</button>
+                                      <!--  <button class="layui-btn whui-btn-upload"><i class="fa fa-upload"></i>上传</button>
+                                        <button class="layui-btn whui-btn-download"><i class="fa fa-download"></i>下载</button>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-col-xs12 layui-col-sm4 layui-col-md3" style="text-align: center;">
+                                <div class="layui-btn-container">
+                                    <div class="layui-btn-group">
+                                        <button class="layui-btn whui-btn-query"><i class="fa fa-search"></i>查询</button>
+                                        <button class="layui-btn whui-btn-reset"><i class="fa fa-eraser"></i>重置</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-row layui-col-space15">
+                    <div class="layui-col-md12">
+                        <div class="layui-card">
+                            <div class="layui-card-body">
+                                <table class="layui-hide" id="menu-table"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../../lib/comm/js/comm.js?page=menu-index" type="text/javascript" charset="utf-8"></script>
+<script src="../../menu/menu-index/menu-index.js" type="text/javascript" charset="utf-8"></script>

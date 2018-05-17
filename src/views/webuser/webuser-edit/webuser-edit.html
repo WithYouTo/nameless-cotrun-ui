@@ -1,0 +1,125 @@
+<div id="webuser-edit">
+	<div class="whui-fluid">
+		<div class="layui-row whui-form">
+			<form class="layui-form" lay-filter="webuser-edit-form">
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">手机号<span style="color: red;">*</span></label>
+						<div class="layui-input-block">
+							<input id="phone" name="phone" lay-verify="required|phone" autocomplete="off" onchange="phoneChange()"  lay-filter="phoneedit-change" placeholder="请输入手机号" class="layui-input" >
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">姓名<span style="color: red;">*</span></label>
+						<div class="layui-input-block">
+							<input type="text" id="name" name="name" lay-verify="required" autocomplete="off" placeholder="请输入姓名" class="layui-input">
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">用户类型<span style="color: red;">*</span></label>
+						<div class="layui-input-block">
+							<select id="managerType" name="managerType" lay-verify="required">
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">性别<span style="color: red;">*</span></label>
+						<div class="layui-input-block">
+							<select id="sex" name="sex" lay-verify="required">
+								<option value='0'>女</option>
+								<option value='1'>男</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">公司名称<span style="color: red;">*</span></label>
+						<div class="layui-input-block">
+							<select id="companyName" name="companyCode" lay-verify="required" lay-filter="companyedit-change">
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">部门<span style="color: red;">*</span></label>
+						<div class="layui-input-block">
+							<select id="deptName" name="departmentId" lay-verify="required">
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">职位<span style="color: red;">*</span></label>
+						<div class="layui-input-block">
+							<select id="positionId" name="positionId" lay-verify="required">
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">工号</label>
+						<div class="layui-input-block">
+							<input type="text" id="account" name="account" lay-verify="required" autocomplete="off"  disabled="disabled" class="layui-input">
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">邮箱</label>
+						<div class="layui-input-block">
+							<input type="text" id="mail" name="mail" autocomplete="off" placeholder="请输入邮箱" class="layui-input">
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">身份证号</label>
+						<div class="layui-input-block">
+							<input type="text" id="idCard" name="idCard"  autocomplete="off" placeholder="请输入身份证号" class="layui-input">
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">名族</label>
+						<div class="layui-input-block">
+							<input type="text" id="race" name="race" autocomplete="off" placeholder="请输入民称" class="layui-input">
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">居住地址</label>
+						<div class="layui-input-block">
+							<input type="text" id="address" name="address" autocomplete="off" placeholder="请输入居住地址" class="layui-input">
+						</div>
+					</div>
+				</div>
+				<input type="text" class="layui-input layui-hide" id="id" name="id" />
+				<button class="layui-btn layui-hide" lay-submit lay-filter="webuser-edit-submit"></button>
+			</form>
+		</div>
+	</div>
+</div>
+<script src="../../../lib/comm/js/comm.js?page=webuser-edit" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	layui.use('form', function() {
+		 var $ = layui.jquery;
+		 function phoneChange(){
+	 		var phone=$("#webuser-edit #phone").val();
+			$("#webuser-edit #account").val(phone);
+		 }
+		 //将phoneChange事件绑到window对象上，不然找不到
+		 window.phoneChange=phoneChange;
+	});
+</script>

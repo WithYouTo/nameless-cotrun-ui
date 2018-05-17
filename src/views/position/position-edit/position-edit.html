@@ -1,0 +1,39 @@
+<div id="position-edit">
+	<div class="whui-fluid">
+		<div class="layui-row whui-form">
+			<form class="layui-form" lay-filter="position-edit-form">
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">公司名称</label>
+						<div class="layui-input-block">
+							<select id="companyName" name="companyCode" lay-verify="required" autocomplete="off" class="layui-select">
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">职位名称</label>
+						<div class="layui-input-block">
+							<input type="text" id="positionNameEdit" name="positionName" lay-verify="required" autocomplete="off" placeholder="请输入职位名称" class="layui-input">
+							</input>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+					<div class="layui-form-item">
+						<label class="layui-form-label">职位级别</label>
+						<div class="layui-input-block">
+							<select id="positionLevel" name="positionLevel" lay-verify="required" autocomplete="off" class="layui-select">
+							</select>
+						</div>
+					</div>
+				</div>
+				<input type="text" class="layui-input layui-hide" id="tbbb05IdEdit" name="tbbb05Id" />
+				<input type="text" class="layui-input layui-hide" id="oldNameEdit" name="oldName" />
+				<button class="layui-btn layui-hide" lay-submit lay-filter="position-edit-submit"></button>
+			</form>
+		</div>
+	</div>
+</div>
+<script src="../../../lib/comm/js/comm.js?page=position-edit" type="text/javascript" charset="utf-8"></script>

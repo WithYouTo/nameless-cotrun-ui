@@ -1,0 +1,56 @@
+{
+  "cols": [
+    [
+      {
+        "type": "checkbox"
+      }, {
+      "title": "序号",
+      "type": "numbers"
+    }, {
+      "field": "estateName",
+      "width": 150,
+      "title": "房产名称"
+    }, {
+      "field": "estateNo",
+      "width": 120,
+      "title": "房产编号"
+    },{
+      "field": "province",
+      "title": "省",
+      "width": 100
+    },{
+      "field": "city",
+      "title": "市",
+      "width": 100
+    }, {
+      "field": "district",
+      "title": "区",
+      "width": 100
+    },  {
+      "field": "street",
+      "title": "街道",
+      "width": 100
+    }, {
+      "field": "areaName",
+      "title": "小区",
+      "width": 100
+    }, {
+      "field": "building",
+      "title": "栋",
+      "width": 50
+    }, {
+      "field": "cellName",
+      "title": "单元",
+      "width": 80
+    }, {
+      "field": "roomName",
+      "title": "房号",
+      "width": 80
+    },{
+      "field": "status",
+      "title": "房产状态",
+      "width": 100
+    }
+    ]
+  ]
+}
